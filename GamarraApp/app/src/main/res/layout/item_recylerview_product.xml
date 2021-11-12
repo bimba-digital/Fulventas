@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@null">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="1dp"
+        card_view:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_grid_product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"/>
+
+                <com.like.LikeButton
+                    android:id="@+id/btn_favourite"
+                   style="@style/LikeBtnFavourite"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_x"
+                android:paddingTop="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x">
+
+                <TextView
+                    android:id="@+id/tv_grid_product_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="@dimen/heading_small"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/p_item_heading_mb"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tv_grid_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/heading_small"
+                    android:layout_below="@id/tv_grid_product_heading" />
+
+                <TextView
+                    android:id="@+id/tv_grid_product_Previous_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prev"
+                    android:textColor="@color/fontSemiWhiteColor"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:background="@drawable/text_strike_through"
+                    android:textSize="@dimen/heading_small"
+                    android:layout_marginLeft="@dimen/fab_margin_half"
+                    android:layout_toRightOf="@id/tv_grid_product_price"
+                    android:layout_below="@id/tv_grid_product_heading"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x">
+
+
+
+
+                <TextView
+                    android:id="@+id/lblTienda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/p_item_heading_mb"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:text="Tienda:"
+                    android:textSize="@dimen/heading_small" />
+
+
+                <TextView
+                    android:id="@+id/lblstock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblTienda"
+                    android:visibility="gone"
+                    android:text="Stock:"
+                    android:textSize="@dimen/heading_small" />
+
+                <TextView
+                    android:id="@+id/lblmarca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblstock"
+                    android:text="Marca:"
+                    android:textSize="@dimen/heading_small" />
+
+                <TextView
+                    android:id="@+id/lblGaleria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblmarca"
+                    android:text="Galeria:"
+                    android:textSize="@dimen/heading_small" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

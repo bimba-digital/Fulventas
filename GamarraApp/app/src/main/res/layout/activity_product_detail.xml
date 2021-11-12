@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".productDetail.ProductDetailActivity"
+    tools:openDrawer="start">
+
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/EcommerceTheme"
+   >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+        <include
+            layout="@layout/toolbar_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/fab_margin_half">
+            <TextView
+                android:id="@+id/id_lista_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+
+            <!--START OF PRODUCT SLIDER, BUTTON, DESCRIPTION-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_product_detail_image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp">
+
+                </androidx.viewpager.widget.ViewPager>
+
+                <com.like.LikeButton
+                    android:id="@+id/btn_p_detail_favourite"
+                    style="@style/LikeBtnFavourite"
+                    android:layout_marginRight="@dimen/fab_margin_half" />
+
+                <!--START OF DOTS CONATAINER-->
+                <LinearLayout
+                    android:id="@+id/layout_product_Detail_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="320dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_x"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <!--END OF DOTS CONATAINER-->
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_product_detail_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="Product Item"
+                android:textSize="@dimen/heading_semi_big"
+                android:textStyle="bold" />
+
+            <!--START OF PRICE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:layout_marginTop="@dimen/fab_margin_quarter"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_product_detail_pre_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/fab_margin_half"
+                    android:background="@drawable/text_strike_through"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="S/. 85"
+                    android:textColor="@color/fontSemiWhiteColor"
+                    android:textSize="@dimen/heading_mideum"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_product_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S/. 65"
+                    android:textColor="@color/fontLiteColor"
+                    android:textSize="@dimen/heading_mideum"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_share_black_24dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+            <!--END OF PRICE-->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:layout_marginRight="@dimen/margin_x"
+            android:layout_marginTop="@dimen/fab_margin_quarter"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_product_detail_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:textColor="@color/fontLiteColor"
+                android:textSize="@dimen/heading_mideum"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+           <!-- <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:weightSum="100"
+                android:layout_marginTop="@dimen/fab_margin_quarter"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad"
+                    android:textColor="@color/fontLiteColor"
+                    android:textSize="@dimen/heading_mideum"
+                    android:textStyle="normal"
+                    android:layout_weight="50"
+                    />
+
+
+             <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_product_detail_quantity"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin_24"
+                    android:text="Cant"
+                    android:layout_weight="50"/>
+
+
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:weightSum="100"
+                android:layout_marginTop="@dimen/fab_margin_quarter"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/fab_margin_half">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad"
+                    android:textColor="@color/fontLiteColor" />
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:background="@color/browser_actions_divider_color"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"       >
+
+                    <LinearLayout
+                        android:id="@+id/btn_dialog_cart_product_minus_container"
+                        style="@style/BtnCartProductDetailDialogContainer"
+                        android:layout_width="57dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp">
+
+                        <ImageButton
+                            style="@style/BtnCartProductDetailDialog"
+                            android:src="@drawable/ic_caret_left" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_dialog_cart_product_quantity_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+
+                        android:paddingLeft="@dimen/fab_margin_half"
+                        android:paddingRight="@dimen/fab_margin_half">
+
+                        <Button
+                            android:id="@+id/btn_dialog_cart_product_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:textColor="@color/fontColor"
+                            android:textSize="@dimen/heading_mideum" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_dialog_cart_product_plus_conatiner"
+                        style="@style/BtnCartProductDetailDialogContainer"
+                        android:layout_width="20dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="0dp">
+
+                        <ImageButton
+                            style="@style/BtnCartProductDetailDialog"
+                            android:src="@drawable/ic_caret_right" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- PRICE AND ADD TO CART BUTTON-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:weightSum="2">
+
+             <!--   <Button
+                    android:id="@+id/btn_product_detail_size"
+                    style="@style/ProductDeatilsBtnBorder"
+
+                    android:background="@drawable/btn_round_left_border"
+                    android:paddingLeft="@dimen/fab_margin_24"
+                    android:paddingRight="@dimen/fab_margin"
+                    android:text="Talla" />
+
+                <Button
+                    android:id="@+id/btn_product_detail_color"
+                    style="@style/ProductDeatilsBtnBorder"
+
+                    android:background="@drawable/btn_round_left_border"
+                    android:paddingLeft="@dimen/fab_margin_24"
+                    android:paddingRight="@dimen/fab_margin"
+                    android:text="Color" />-->
+
+
+                <Spinner
+                    android:id="@+id/sp1_talla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+               <!-- <Spinner
+                    android:id="@+id/sp2_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />-->
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_product_detail_add_cart"
+                style="@style/BtnPrimary"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/btn_add_to_cart" />
+            <!--END OF PRODUCT IMAGE AREA-->
+
+
+            <!--START OF PRODUCT DETAIL AREA-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:orientation="vertical">
+
+                <!--START OF PRODUCT DESCRIPTION-->
+                <LinearLayout style="@style/borderLayout"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/fab_margin"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingTop="@dimen/fab_margin">
+
+                    <!--START OF PRODUCT DETAIL FIRST AREA-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Descripción del producto"
+                            android:textSize="@dimen/heading_mideum" />
+
+                        <!--START OF DESCRIPTION-->
+                        <LinearLayout
+                            android:id="@+id/p_detail_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/fab_margin_half"
+                            android:layout_marginTop="@dimen/fab_margin_half"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_p_detail_description"
+                                style="@style/ParagraphStyle"
+                                android:lineSpacingExtra="@dimen/fab_margin_quarter"
+                                android:text="@string/lorem_epsam" />
+
+                        </LinearLayout>
+                        <!--END OF DESCRIPTION-->
+
+                      <!--  <Button
+                            android:id="@+id/btn_p_detail_desc_read_more"
+                            style="@style/BtnReadMoreBtn" />-->
+
+                    </LinearLayout>
+                    <!--END OF PRODUCT DETAIL FIRST AREA-->
+
+                    <!-- add -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/btn_p_detail_desc_additional"
+                            style="@style/BtnReadAdditionalBtn" />
+                        <!--START OF DESCRIPTION-->
+                        <LinearLayout
+                            android:id="@+id/p_additional_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/fab_margin_half"
+                            android:layout_marginTop="@dimen/fab_margin_half"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_p_additional"
+                                style="@style/ParagraphStyle"
+                                android:lineSpacingExtra="@dimen/fab_margin_quarter"
+                                android:text="" />
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:id="@+id/rn_foto_medida" />-->
+
+                            <ImageView
+                            android:id="@+id/rn_foto_medida"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                             />
+
+                        </LinearLayout>
+                        <!--END OF DESCRIPTION-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/btn_p_detail_desc_politic"
+                            style="@style/BtnReadPoliticBtn" />
+                        <!--START OF DESCRIPTION-->
+                        <LinearLayout
+                            android:id="@+id/p_politic_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/fab_margin_half"
+                            android:layout_marginTop="@dimen/fab_margin_half"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_p_politic"
+                                style="@style/ParagraphStyle"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/fab_margin_quarter"
+                                android:text="@string/lorem_epsam" />
+
+                        </LinearLayout>
+                        <!--END OF DESCRIPTION-->
+                    </LinearLayout>
+                <!-- END ADD -->
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/borderLayout"></LinearLayout>
+                <!--END OF PRODUCT DESCRIPTION-->
+
+                <!--START OF PRODUCT DETAIL GUARANTEE AREA-->
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/fab_margin"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingTop="@dimen/fab_margin">
+
+                    &lt;!&ndash;START OF DETAIL&ndash;&gt;
+                    <LinearLayout
+                        android:id="@+id/p_detail_list_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/p_detail_list_desc_line"
+                            style="@style/ItemDescriptionList">
+
+                            <TextView
+                                style="@style/ItemDescriptionListLeft"
+                                android:text="Condition" />
+
+                            <TextView
+                                style="@style/ItemDescriptionListRight"
+                                android:text="New With Box" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemDescriptionList">
+
+                            <TextView
+                                style="@style/ItemDescriptionListLeft"
+                                android:text="Brand" />
+
+                            <TextView
+                                style="@style/ItemDescriptionListRight"
+                                android:text="Fastrack" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemDescriptionList">
+
+                            <TextView
+                                style="@style/ItemDescriptionListLeft"
+                                android:text="Width" />
+
+                            <TextView
+                                style="@style/ItemDescriptionListRight"
+                                android:text="New With Box" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemDescriptionList">
+
+                            <TextView
+                                style="@style/ItemDescriptionListLeft"
+                                android:text="Condition" />
+
+                            <TextView
+                                style="@style/ItemDescriptionListRight"
+                                android:text="New With Box" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemDescriptionList">
+
+                            <TextView
+                                style="@style/ItemDescriptionListLeft"
+                                android:text="Style" />
+
+                            <TextView
+                                style="@style/ItemDescriptionListRight"
+                                android:text="Men Backpack" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemDescriptionList">
+
+                            <TextView
+                                style="@style/ItemDescriptionListLeft"
+                                android:text="Width" />
+
+                            <TextView
+                                style="@style/ItemDescriptionListRight"
+                                android:text="New With Box" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    &lt;!&ndash;END OF DETAIL&ndash;&gt;
+
+                    <Button
+                        android:id="@+id/btn_p_detail_desc_list_read_more"
+                        style="@style/BtnReadMoreBtn" />
+
+                </LinearLayout>-->
+                <!--END OF PRODUCT DETAIL GUARANTEE AREA-->
+
+            </LinearLayout>
+            <!--END OF PRODUCT SLIDER, BUTTON, DESCRIPTION-->
+
+
+            <!-- START OF SPONSORED PRODUCTS AREA-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activityBG"
+                android:orientation="vertical">
+<!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/fab_margin"
+                    android:paddingLeft="@dimen/margin_x"
+                    android:paddingRight="@dimen/margin_x"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:text="Sponsored Products"
+                    android:textSize="@dimen/heading_mideum"
+                    />-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_p_detail_product_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin_quarter"
+                    android:layout_marginRight="@dimen/fab_margin_quarter"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/recylerview_margin_y">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <!-- END OF SPONSORED PRODUCTS AREA-->
+
+            </LinearLayout>
+            <!--END OF PRODUCT DETAIL AREA-->
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+
+    <include layout="@layout/menu_navigation_view" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

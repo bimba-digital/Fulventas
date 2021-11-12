@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/EcommerceTheme"
+    tools:context=".checkoutPayment.ShippingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_cart_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abl_cart_appbar"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_x"
+        android:paddingRight="@dimen/margin_x">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                android:paddingTop="@dimen/fab_margin">
+
+                <!--START OF SHIPPING METHOD CONATINER-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                </LinearLayout>
+                <!--END OF SHIPPING METHOD CONATINER-->
+
+                <LinearLayout style="@style/AddressFormConatinerHalf">
+
+                    <!--START OF EDITTEXT : FIRST NAME-->
+                    <LinearLayout
+                        style="@style/AddressFormConatiner"
+                        android:layout_marginRight="@dimen/fab_margin_half">
+
+                        <TextView
+                            style="@style/TVAddressForm"
+                            android:text="@string/input_first_name" />
+
+                        <EditText
+                            android:id="@+id/et_shipping_first_name"
+                            style="@style/ETAddressForm" />
+
+                    </LinearLayout>
+                    <!--START OF EDITTEXT : FIRST NAME-->
+
+                    <!--START OF EDITTEXT : LAST NAME-->
+                    <LinearLayout
+                        style="@style/AddressFormConatiner"
+                        android:layout_marginLeft="@dimen/fab_margin_half">
+
+                        <TextView
+                            style="@style/TVAddressForm"
+                            android:text="@string/input_last_name" />
+
+                        <EditText
+                            android:id="@+id/et_shipping_last_name"
+                            style="@style/ETAddressForm" />
+                    </LinearLayout>
+                    <!--END OF EDITTEXT : LAST NAME-->
+
+                </LinearLayout>
+
+                <!--START OF EDITTEXT : ADDRESS LINE 1-->
+                <LinearLayout style="@style/AddressFormConatinerFull">
+
+                    <TextView
+                        style="@style/TVAddressForm"
+                        android:text="Persona que va a recibir el pedido. (Nombres y Apellidos)" />
+
+                    <EditText
+                        android:id="@+id/et_recepcion_name"
+                        style="@style/ETAddressForm" />
+
+                </LinearLayout>
+                <!--END OF EDITTEXT : ADDRESLINE 1-->
+
+
+
+                <!--START OF EDITTEXT : ADDRESS LINE 1-->
+                <LinearLayout style="@style/AddressFormConatinerFull">
+
+                    <TextView
+                        style="@style/TVAddressForm"
+                        android:text="@string/input_address_1" />
+
+                    <EditText
+                        android:id="@+id/et_shipping_address_1"
+                        style="@style/ETAddressForm" />
+
+                </LinearLayout>
+                <!--END OF EDITTEXT : ADDRESLINE 1-->
+
+                <!--START OF EDITTEXT : ADDRESLINE 2-->
+                <LinearLayout style="@style/AddressFormConatinerFull">
+
+                    <TextView
+                        style="@style/TVAddressForm"
+                        android:text="@string/input_address_2" />
+
+                    <EditText
+                        android:id="@+id/et_shipping_address_2"
+                        style="@style/ETAddressForm" />
+
+                </LinearLayout>
+                <!--END OF EDITTEXT : ADDRESLINE 2-->
+                <LinearLayout style="@style/AddressFormConatinerFull">
+
+                    <TextView
+                        style="@style/TVAddressForm"
+                        android:text="@string/input_pemail" />
+
+                    <EditText
+                        android:id="@+id/et_shipping_pemail"
+                        style="@style/ETAddressForm"
+                        android:inputType="textEmailAddress"/>
+
+                </LinearLayout>
+                <!--END OF EDITTEXT : BUSINESS -->
+                <!--START OF EDITTEXT : BUSINESS-->
+                <LinearLayout style="@style/AddressFormConatinerFull">
+
+                    <TextView
+                        style="@style/TVAddressForm"
+                        android:text="@string/input_pmobile" />
+
+                    <EditText
+                        android:id="@+id/et_shipping_pmobile"
+                        style="@style/ETAddressForm"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/AddressFormConatinerHalf">
+
+                    <!--START OF EDITTEXT : CITY-->
+                    <LinearLayout
+                        style="@style/AddressFormConatiner"
+                        android:layout_marginRight="@dimen/fab_margin_half">
+
+                        <TextView
+                            style="@style/TVAddressForm"
+                            android:text="@string/input_pdistrict" />
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/et_shipping_city"-->
+<!--                            style="@style/ETAddressForm" />-->
+
+                        <Spinner
+                            android:id="@+id/et_shipping_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/distritos"
+                            />
+
+
+                    </LinearLayout>
+                    <!--END OF EDITTEXT : CITY-->
+
+                    <!--START OF EDITTEXT : ZIP CODE-->
+
+                    <LinearLayout
+                        style="@style/AddressFormConatiner"
+                        android:layout_marginRight="@dimen/fab_margin_half">
+
+                        <TextView
+                            style="@style/TVAddressForm"
+                            android:text="@string/input_pprovince" />
+
+                        <EditText
+                            android:id="@+id/et_shipping_provincia"
+                            android:text="Lima"
+                            android:editable="false"
+                            style="@style/ETAddressForm" />
+                    </LinearLayout>
+
+                    <!--END OF EDITTEXT : ZIP CODE-->
+
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/AddressFormConatinerHalf">
+
+                    <!--START OF EDITTEXT : STATE-->
+                    <LinearLayout
+                        style="@style/AddressFormConatiner"
+                        android:layout_marginRight="@dimen/fab_margin_half">
+
+                        <TextView
+                            style="@style/TVAddressForm"
+                            android:text="@string/input_state" />
+
+                        <EditText
+                            android:id="@+id/et_shipping_state"
+                            android:text="Lima"
+                            android:editable="false"
+                            style="@style/ETAddressForm" />
+                    </LinearLayout>
+                    <!--END OF EDITTEXT : STATE-->
+
+                    <!--START OF EDITTEXT : COUNTRY-->
+                    <LinearLayout
+                        style="@style/AddressFormConatiner"
+                        android:layout_marginLeft="@dimen/fab_margin_half">
+
+                        <TextView
+                            style="@style/TVAddressForm"
+                            android:text="@string/input_country" />
+
+                        <EditText
+                            android:id="@+id/et_shipping_country"
+                            android:text="Perú"
+                            android:editable="false"
+                            style="@style/ETAddressForm" />
+                    </LinearLayout>
+                    <!--END OF EDITTEXT : COUNTRY-->
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/btn_complete_address"
+                    style="@style/BtnWithIconLeftContainer"
+                    android:layout_marginTop="@dimen/fab_margin_half"
+                    android:background="@drawable/btn_round_small_primary">
+
+                    <Button
+                        android:id="@+id/btn_complete_address_inner"
+                        style="@style/BtnWithIconLeft"
+                        android:text="@string/btn_now" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/pbar_container"
+        style="@style/QeasyProgressBarConatiner">
+        <com.wang.avi.AVLoadingIndicatorView style="@style/QeasyProgressBar" />
+    </RelativeLayout>
+
+</RelativeLayout>

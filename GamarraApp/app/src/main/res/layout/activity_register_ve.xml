@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/EcommerceTheme"
+    tools:context=".userRegistration.RegisterVeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_cart_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/abl_cart_appbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--START OF LOGIN AREA-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/fab_margin"
+                android:paddingLeft="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingTop="@dimen/fab_margin">
+
+                <!--START OF LOGIN WITH PASSWORD AREA-->
+
+                <TextView
+                    android:id="@+id/tv_reg_msg"
+                    style="@style/validationMsg"
+                    android:gravity="left"/>
+
+
+                <EditText
+                    android:id="@+id/et_register_first_name"
+                    style="@style/ETRegistrationForm"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/tv_validation_msg_first_name"
+                    style="@style/validationMsg" />
+
+                <EditText
+                    android:id="@+id/et_register_last_name"
+                    style="@style/ETRegistrationForm"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/lastname"
+                    android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/tv_validation_msg_last_name"
+                    style="@style/validationMsg" />
+
+                <EditText
+                    android:id="@+id/et_register_telefono"
+                    style="@style/ETRegistrationForm"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/phone"
+                    android:inputType="textPersonName" />
+                <TextView
+                    android:id="@+id/tv_validation_msg_telefono"
+                    style="@style/validationMsg" />
+
+                <EditText
+                    android:id="@+id/et_register_ruc"
+                    style="@style/ETRegistrationForm"
+                    android:hint="RUC o DNI*"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_validation_msg_ruc"
+                    style="@style/validationMsg" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_razonsocial"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="Razon Social"-->
+<!--                    android:inputType="textPersonName" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_razonsocial"-->
+<!--                    style="@style/validationMsg" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_email"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="Email"-->
+<!--                    android:inputType="textEmailAddress" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_email"-->
+<!--                    style="@style/validationMsg" />-->
+
+
+
+
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_dni"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="D.N.I."-->
+<!--                    android:inputType="textPersonName" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_dni"-->
+<!--                    style="@style/validationMsg" />-->
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin_half"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_register_password"
+                            style="@style/ETRegistrationForm"
+                            android:drawableRight="@drawable/bootic_logo"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="52dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/button_height"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/fab_margin_half"
+                        android:layout_marginLeft="5dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_lock_fill_black"
+                        android:alpha="0.5" />
+
+                </RelativeLayout>
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/fab_margin_half"-->
+<!--                        app:hintEnabled="false"-->
+<!--                        app:passwordToggleEnabled="true">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/et_repetir_password"-->
+<!--                            style="@style/ETRegistrationForm"-->
+<!--                            android:drawableRight="@drawable/bootic_logo"-->
+<!--                            android:hint="Repetir Contraseña"-->
+<!--                            android:inputType="textPassword"-->
+<!--                            android:paddingLeft="52dp" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/button_height"-->
+<!--                        android:layout_height="@dimen/button_height"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_marginTop="@dimen/fab_margin_half"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:padding="12dp"-->
+<!--                        android:src="@drawable/ic_lock_fill_black"-->
+<!--                        android:alpha="0.5" />-->
+
+<!--                </RelativeLayout>-->
+
+                <TextView
+                    android:id="@+id/tv_validation_msg_password"
+                    style="@style/validationMsg" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_galeria"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="Galeria"-->
+<!--                    android:inputType="textPersonName" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_galeria"-->
+<!--                    style="@style/validationMsg" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_direciontienda"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="Dirección de la Galeria"-->
+<!--                    android:inputType="textPersonName" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_direciontienda"-->
+<!--                    style="@style/validationMsg" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_numstand"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="Numero de la Tienda"-->
+<!--                    android:inputType="textPersonName" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_numstand"-->
+<!--                    style="@style/validationMsg" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_register_nombretienda"-->
+<!--                    style="@style/ETRegistrationForm"-->
+<!--                    android:hint="Nombre de la Tienda"-->
+<!--                    android:inputType="textPersonName" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_validation_msg_nombretienda"-->
+<!--                    style="@style/validationMsg" />-->
+
+
+
+                <Button
+                    android:id="@+id/btn_user_registration"
+                    style="@style/BtnPrimary"
+                    android:text="@string/btn_create_account_ve"
+                    android:layout_marginTop="10dp"/>
+
+<!--                Agregar Politicas de privacida con un chexckbox -->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacity_politic"
+                        android:textStyle="bold"
+
+                        />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Ver"
+                        android:id="@+id/btnVerPoliticas"
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/recomendations_necesary"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_terms_writing"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin_half"
+                    android:text="@string/recomendaciones_vendedor"
+                    android:textColor="@color/fontLiteColor" />
+
+                <!--END OF LOGIN WITH PASSWORD AREA-->
+
+
+                <!--START OF SIGN UP WRITING-->
+
+                <!--END OF SIGN UP WRITING-->
+
+            </LinearLayout>
+            <!--END OF LOGIN AREA-->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

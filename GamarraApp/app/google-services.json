@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "49407936532",
+    "firebase_url": "https://gamarritaapp.firebaseio.com",
+    "project_id": "gamarritaapp",
+    "storage_bucket": "gamarritaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49407936532:android:1f64b68d238e1bc2caff01",
+        "android_client_info": {
+          "package_name": "com.mishasho.tienda.moda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49407936532-u5jj8rarcthlpmv3l01rch5ctpblb05o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mishasho.tienda.moda",
+            "certificate_hash": "580f97cbf9e8000d32d066b8bdaba096483e04f7"
+          }
+        },
+        {
+          "client_id": "49407936532-t8hkli5ofktk87822c07gn55j2li421i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBryXVAMDtBm0feLWKwRmkfsn87PNoq9EY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49407936532-t8hkli5ofktk87822c07gn55j2li421i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

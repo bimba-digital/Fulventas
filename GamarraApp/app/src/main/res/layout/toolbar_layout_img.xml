@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_img"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/fontColor"
+    app:contentInsetStartWithNavigation="0dp"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:contentInsetRight="@dimen/fab_margin"
+    app:contentInsetEnd="@dimen/fab_margin">
+
+    <ImageView
+        android:id="@+id/toolbar_logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_x"
+        android:src="@drawable/bootic_logo"
+        android:visibility="gone"
+        app:srcCompat="@drawable/bootic_logo" />
+
+    <TextView
+        android:id="@+id/toolbar_title_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Title"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/toolbar_title"
+        android:textStyle="bold" />
+
+
+</androidx.appcompat.widget.Toolbar>

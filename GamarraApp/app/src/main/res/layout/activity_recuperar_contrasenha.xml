@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/EcommerceTheme"
+    tools:context=".userLogin.RecuperarContraseñaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_cart_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/abl_cart_appbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--START OF LOGIN AREA-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/fab_margin"
+                android:paddingLeft="@dimen/margin_x"
+                android:paddingRight="@dimen/margin_x"
+                android:paddingTop="@dimen/fab_margin">
+
+                <!--START OF LOGIN WITH PASSWORD AREA-->
+
+                <TextView
+                    android:id="@+id/tv_login_msg"
+                    style="@style/validationMsg" />
+
+                <EditText
+                    android:id="@+id/et_recuperar_email"
+                    style="@style/ETRegistrationForm"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/tv_validation_login_msg_email"
+                    style="@style/validationMsg" />
+
+                <!-- end-->
+
+                <Button
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:id="@+id/btn_recuperar_registration"
+                    style="@style/BtnPrimary"
+                    android:text="@string/btn_validar_email" />
+
+
+                <!--END OF LOGIN WITH PASSWORD AREA-->
+
+
+                <!--START OF SIGN UP WRITING-->
+
+                <LinearLayout style="@style/BottomRegLoginConatiner">
+
+                    <TextView
+                        style="@style/BottomRegLoginWriting"
+                        android:text="@string/already_hv_account" />
+
+                    <Button
+                        android:id="@+id/btn_register_login"
+                        style="@style/BottomRegLoginWritingBtn"
+                        android:text="@string/btn_sign_in" />
+
+                </LinearLayout>
+                <!--END OF SIGN UP WRITING-->
+
+            </LinearLayout>
+            <!--END OF LOGIN AREA-->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

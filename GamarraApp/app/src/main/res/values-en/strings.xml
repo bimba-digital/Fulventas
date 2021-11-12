@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fulventas</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_register">Register</string>
+    <string name="title_product_detail">Product Detail</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_checkout">Pay</string>
+    <string name="title_sign_in">Login / Register</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_favourites">Favorites</string>
+    <string name="title_shipping">Send Data</string>
+    <string name="title_shipping_pago">Payment</string>
+    <string name="title_confirm_payment">Confirm</string>
+
+    <string name="title_types_categoria">List Categories</string>
+    <string name="title_recuperar_contraseña">Recovery Password</string>
+    <string name="title_opinion">Opinion</string>
+    <string name="btn_enviar">Send</string>
+
+    <string name="facebook_app_id">3008538355826882</string>
+    <string name="fb_login_protocol_scheme">fb3008538355826882</string>
+    <string name="qeasy_notification">Qeasy</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello white fragment</string>
+    <string name="lorem_epsam">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Aperiam eaque ipsa quae ab illo inventore veritatis.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="recomendaciones_vendedor">
+        - Put weight of the product. \n
+         - Put a table of measurements of the Product you are selling. \n
+         - The order must have a LABEL when it has been prepared, the label must have CUSTOMER NAME, ADDRESS, REFERENCE, CELLULAR. \n
+         - The Seller must have a mandatory minimum stock for ONLINE sales of 6 units of each product sold Online. \n
+         - The order has to be prepared the next day in the morning. \n
+    </string>
+
+    <string name="register_terms_writing">
+        By registering, you agree that you have read and accepted our Terms and Conditions \n \n PRIVACY POLICY \n \n
+This Privacy Policy establishes the terms in which Gamarritas uses and protects the information that is provided by its users when using its Platform and website. This company is committed to the security of its users data. When we ask you to fill in the fields of personal information with which you can be identified, we do so ensuring that it will only be used in accordance with the terms of this document. However, this Privacy Policy may change over time or be updated, so we recommend and emphasize that you continually review this page to ensure that you agree with said changes.
+\n\n
+Information that is collected \n \n
+Our website may collect personal information for example:
+
+
+Name, contact information such as your email address and demographic information. Likewise, when necessary, specific information may be required to process an order or make a delivery or billing.
+
+
+
+Use of collected information
+
+
+Our Platform and website uses the information in order to provide the best possible service, particularly to maintain a register of users, of orders, if applicable, and to improve our products and services. It is possible that emails will be sent periodically through our site with special offers, new products and other advertising information that we consider relevant to you or that may provide you with some benefit, these emails will be sent to the address you provide and may be canceled. anytime.
+
+Gamarritas is highly committed to fulfill the commitment to keep your information safe. We use the most advanced systems and constantly update them to ensure that there is no unauthorized access.
+
+
+
+Commission
+
+
+The seller user will be charged a commission for the use of the platform so that he can sell his products online.
+
+
+
+Cookies
+
+
+A cookie refers to a file that is sent with the purpose of requesting permission to be stored on your computer, by accepting said file it is created and the cookie then serves to have information regarding web traffic, and also facilitates future recurring ones. Another function that cookies have is that with them the web can recognize you individually and therefore provide you with the best personalized service on its web.
+
+
+Our Platform and website use cookies to be able to identify the pages that are visited and their frequency. This information is used only for statistical analysis and then the information is permanently deleted. You can delete cookies at any time from your computer. However, cookies help to provide a better service on websites, you do not give access to information from your computer or from you, unless you want it to and provide it directly. You can accept or deny the use of cookies, however most browsers automatically accept cookies as it serves to have a better web service. You can also change your computer settings to decline cookies. If they are declined, you may not be able to use some of our services.
+
+
+
+Links to Third Parties
+
+
+This website may contain links to other sites that may be of interest to you. Once you click on these links and leave our page, we no longer have control over the site to which you are redirected and therefore we are not responsible for the terms or privacy or the protection of your data on those other third party sites. These sites are subject to their own privacy policies, so it is recommended that you consult them to confirm that you agree with them.
+
+
+
+Control of your personal information
+
+
+At any time you can restrict the collection or use of personal information that is provided to our website. Each time you are asked to fill in a form, such as user registration, you can check or uncheck the option to receive information by email. In case you have marked the option to receive our newsletter or advertising, you can cancel it at any time.
+
+
+This company will not sell, transfer or distribute the personal information that is collected without your consent, unless required by a judge with a court order.
+
+
+Gamarritas reserves the right to change the terms of this Privacy Policy at any time.
+    </string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+
+
+    <!--SHIPPING FRAGMENT-->
+    <string name="shipping_top_text">Which shipping partner do you like?</string>
+    <string name="shipping_dhl">DHL</string>
+    <string name="shipping_ups">UPS</string>
+    <string name="shipping_fedex">FEDEX</string>
+    <string name="shipping_cost_dhl">No additional cost </string>
+    <string name="shipping_cost_fedex">Additional cost $ 20</string>
+
+    <!--PAYMENT METHOD FRAGMENT-->
+    <string name="payment_top_text">How do you want to pay?</string>
+    <string name="payment_creditcard">Credit Card</string>
+    <string name="payment_paypal">Paypal</string>
+    <string name="payment_master_card">Master Card</string>
+
+
+    <!--PAYMENT INFO FRAGMENT-->
+    <string name="payment_info_card_no">Credit Card NUmber</string>
+    <string name="payment_info_expiration">Expiry</string>
+    <string name="payment_info_cvv">CVV-CODE</string>
+    <string name="payment_finish_order">Pay whith Paypal / TCredit Card</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+
+
+    <!--CONFIRM ADDRESS FRAGMENT-->
+    <string name="shipping_address">Send Address</string>
+    <string name="confirm_name">Name: Erich</string>
+    <string name="confirm_address">Address: address Erich</string>
+    <string name="confirm_city">City : Lima</string>
+    <string name="confirm_zip">Zip: 01</string>
+    <string name="confirm_country">Country: Perú</string>
+    <string name="confirm_sipping_company">Send whith: FedEx</string>
+
+    <!--CONFIRM PAYMENT FRAGMENT-->
+    <string name="payment_method">Payform: Paypal</string>
+    <string name="confirm_payment_card_no">Card No: 343432334</string>
+    <string name="confirm_payment_expires">Exp: 23 de enero de 2020</string>
+    <string name="confirm_payment_cvv">CVV : 2334</string>
+
+
+    <!--HOMEPAGE-->
+    <string name="category_popular">Popular Category</string>
+    <string name="popular_product">Popular Products</string>
+    <string name="recent_product">Promotions Fulventas</string>
+    <string name="types_lista">Types</string>
+
+
+    <!--PRODUCT DETAIL-->
+    <string name="read_more">Read More</string>
+    <string name="read_less">Read Less</string>
+
+    <!--PRODUCT ADDITONAL-->
+    <string name="reads_additional">Product Measurements (cm)</string>
+    <string name="read_politic">Store Policies</string>
+
+
+    <!--TYPE CATEGORIA-->
+    <string name="type_list_categoria">ALL CATEGORIES</string>
+
+
+    <!--FORM INPUTS-->
+    <string name="input_first_name">Name</string>
+    <string name="input_last_name">Last Name</string>
+    <string name="input_address_1">Address line 1</string>
+    <string name="input_address_2">Address Reference</string>
+    <string name="input_city">City</string>
+    <string name="input_zip">Postal Code</string>
+    <string name="input_state">Department</string>
+    <string name="input_country">Country</string>
+    <string name="btn_next">Next Step</string>
+    <string name="btn_now">Pay Now</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="btn_validar_email">Send</string>
+    <string name="btn_create_account_ve">Register Vendor</string>
+    <string name="btn_sign_in">Login</string>
+    <string name="btn_sign_ve">Register Vendor</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_sign_in_with_email">Login whith email</string>
+    <string name="btn_sign_in_with_google">Login whith Gmail</string>
+    <string name="btn_sign_in_with_facebook">Login whith Facebook</string>
+    <string name="btn_add_to_cart">Add to Cart</string>
+
+    <string name="dont_hv_account">You do not have an account?</string>
+    <string name="already_hv_account">Do you already have an account?</string>
+    <string name="forgot_password">Did you forget your password?</string>
+
+    <string name="input_pdistrict">District</string>
+    <string name="input_pprovince">Province</string>
+    <string name="input_pbusinessname">Company name (optional)</string>
+    <string name="input_pmobile">Phone</string>
+    <string name="input_pemail">Email</string>
+    <string name="btn_finish">Finalize</string>
+
+    <string name="input_subject">Affair</string>
+    <string name="input_suggestion">Suggestions to improve the service</string>
+
+    <!--PROFILE ACTIVITY-->
+    <string name="my_orders">My orders</string>
+    <string name="my_favourites">My Favorites</string>
+    <string name="my_shipping_address">Send Address</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="save_address">Save Address</string>
+
+    <string name="confirm_address_heading">Payment Info</string>
+    <string name="confirm_address_heading_envio">Send Info</string>
+    <string name="confirm_address_heading_pago">Pay Info</string>
+
+    <string name="comentario_descripcion">We want to know your opinion if you liked the service we provide</string>
+
+    <string name="string_login">Login / Register if you are a Seller</string>
+    <string name="string_logout">Logout</string>
+
+    <string name="string_dialog_alert">Gamarra App informs, For now you can only buy a maximum of 12 products regardless of the category, very soon we will activate wholesale sales nationwide. Thank you for your time</string>
+    <string name="string_dialog_guardado_exito">Successfully Registered</string>
+
+    <string name="title_cart_img">Images</string>
+
+    <string-array name="choice_items">
+        <item>Product</item>
+        <item>Gallery</item>
+    </string-array>
+    <string-array name="lista_filtre">
+        <item>Gallery</item>
+        <item>Store</item>
+    </string-array>
+
+<!--    Lista de Distritos -->
+    <string-array name="distritos">
+        <item>Select</item>
+        <item>Cercado de Lima</item>
+        <item>Ancón</item>
+        <item>Ate</item>
+        <item>Barranco</item>
+        <item>Breña</item>
+        <item>Carabayllo</item>
+        <item>Chaclacayo</item>
+        <item>Chorrillos</item>
+        <item>Cieneguilla</item>
+        <item>Comas</item>
+        <item>El Agustino</item>
+        <item>Independencia</item>
+        <item>Jesús María</item>
+        <item>La Molina</item>
+        <item>La Victoria</item>
+        <item>Lince</item>
+        <item>Los Olivos</item>
+        <item>Lurigancho</item>
+        <item>Lurín</item>
+        <item>Magdalena del Mar</item>
+        <item>Miraflores</item>
+        <item>Pachacamac</item>
+        <item>Pucusuna</item>
+        <item>Pueblo Libre</item>
+        <item>Puente Piedra</item>
+        <item>Punta Hermosa</item>
+        <item>Punta Negra</item>
+        <item>Rímac</item>
+        <item>San Bartolo</item>
+        <item>San Borja</item>
+        <item>San Isidro</item>
+        <item>San Juan de Lurigancho</item>
+        <item>San Juan de Miraflores</item>
+        <item>San Luis</item>
+        <item>San Martin de Porres</item>
+        <item>San Miguel</item>
+        <item>Santa Anita</item>
+        <item>Santa María del Mar</item>
+        <item>Santa Rosa</item>
+        <item>Santiago de Surco</item>
+        <item>Surquillo</item>
+        <item>Villa El Salvador</item>
+        <item>Villa María del Triunfo</item>
+    </string-array>
+
+    <string name="com_facebook_loginview_logged_in_using_facebook_f1gender">Text</string>
+
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="baby">Baby</string>
+    <string name="boys">Boys</string>
+
+    <string name="cart_shopping">Shopping Cart</string>
+    <string name="favorites">Favorites</string>
+    <string name="logout_all">Logout All</string>
+    <string name="principal">Main</string>
+    <string name="my_account">My Account</string>
+    <string name="string_login_header_menu">Login / Register here</string>
+
+    <string name="register_vendor_main_btn">REGISTER VENDOR</string>
+    <string name="public_products_main_btn">PUBLIC PRODUCTS</string>
+    <string name="order_garanty">Order Garanty</string>
+
+    <string name="weight_total">Weight Total</string>
+    <string name="cost_send">Send Cost</string>
+    <string name="shop_dress_register_here">If you are going to buy clothes, register here</string>
+    <string name="password">Password</string>
+    <string name="search_config_full">Search Advanced</string>
+
+    <string name="phone">Phone*</string>
+    <string name="name">Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="privacity_politic">PRIVACY POLITICY</string>
+    <string name="recomendations_necesary">REQUIRED RECOMMENDATIONS</string>
+
+
+</resources>
